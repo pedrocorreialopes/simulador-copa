@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simulador da Copa do Mundo FIFA 2026</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+
+        <img src="assets/logo.png" class="logo" alt="Logo">
+
+        <h1>SIMULADOR FIFA WORLD CUP 2026</h1>
+
+        <p>Escolha os vencedores e descubra quem será o campeão.</p>
+
+    </header>
+
+    <section class="toolbar">
+
+        <button id="simulateAll">
+            <i class="fa-solid fa-bolt"></i>
+            Simular Tudo
+        </button>
+
+        <button id="random">
+            <i class="fa-solid fa-dice"></i>
+            Aleatório
+        </button>
+
+        <button id="reset">
+            <i class="fa-solid fa-rotate-left"></i>
+            Reiniciar
+        </button>
+
+        <button id="save">
+            <i class="fa-solid fa-floppy-disk"></i>
+            Salvar
+        </button>
+
+        <button id="share">
+            <i class="fa-solid fa-share-nodes"></i>
+            Compartilhar
+        </button>
+
+        <button id="pdf">
+            <i class="fa-solid fa-file-pdf"></i>
+            PDF
+        </button>
+
+    </section>
+
+    <main class="bracket">
+
+        <section class="column">
+
+            <h2>Oitavas de Final</h2>
+
+            <div id="round16" class="matches"></div>
+
+        </section>
+
+        <section class="column">
+
+            <h2>Quartas de Final</h2>
+
+            <div id="quarterfinals" class="matches"></div>
+
+        </section>
+
+        <section class="column">
+
+            <h2>Semifinais</h2>
+
+            <div id="semifinals" class="matches"></div>
+
+        </section>
+
+        <section class="column">
+
+            <h2>Final</h2>
+
+            <div id="final" class="matches"></div>
+
+        </section>
+
+        <section class="champion-area">
+
+            <h2>🏆 Campeão</h2>
+
+            <div id="championCard">
+
+                <img id="championFlag"
+                    src="assets/trophy.png"
+                    alt="Campeão">
+
+                <h3 id="championName">
+                    Aguardando definição...
+                </h3>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Simulador da Copa do Mundo FIFA 2026
+        </p>
+
+    </footer>
+
+    <script src="js/teams.js"></script>
+    <script src="js/bracket.js"></script>
+    <script src="js/simulation.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
